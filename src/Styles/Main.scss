@@ -5,4 +5,107 @@
         width: 100%;
         object-fit: cover;
     }
+
+    button {
+        background-color: #A8A6A1;
+        color: #fff;
+        padding: 20px 40px;
+        border-radius: 6px;
+        border: 0px;
+        margin: 2rem 0;
+        font-size: calc(1 * 1rem);
+    }
+
+    .main-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 220px;
+        color: #fff;
+        font-weight: 400;
+        width: 100%;
+        margin: auto;
+        align-content: center;
+
+        p {
+            margin: 2rem 0;
+            font-size: calc(1.2 * 1rem);
+        }
+
+        h1 {
+            font-size: calc(4 * 1rem);
+        }
+
+        
+    }
+
+    .main-content {
+  
+
+        .main-intro {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            margin: auto;
+            padding: 70px 0px;
+
+            h1 {
+                font-size: calc(2.2 * 1rem);
+                margin: 2rem 0;
+            }
+            p {
+                font-size: calc(1 * 1rem);
+                font-weight: 400;
+            }
+
+        }
+
+        .content-card-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            align-items: center;
+
+
+
+            .content-card {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 70%;
+                margin: 4rem 0;
+
+                img {
+                    max-width: 100%;
+                    width: 600px;
+                    height: 500px;
+                    object-fit: cover;
+                }
+
+                .content-card-info {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 35%;
+                    text-align: center;
+
+                    h1 {
+                        font-size: calc(2.2 * 1rem);
+                    }
+                    p {
+                        font-size: calc(1.1 * 1rem);
+                    }
+                }
+
+            }
+        }
+    }
 }
