@@ -1,0 +1,42 @@
+.contact {
+    margin: auto;
+    height: 820px;
+    background-color: #C79288;
+
+
+    .contact-info-wrapper {
+        margin: auto;
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: white;
+
+
+        position: relative;
+        top: 250px;
+
+
+        h1{
+            font-size: 4rem;
+            font-family: Cormorant Garamond;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                font-weight: 400;
+                padding: 25px 0;
+            }
+           
+
+            h4 {
+                font-weight: 200;
+                font-size: 1rem;
+                padding-top: 10px;
+            }
+        }
+    }
+}
