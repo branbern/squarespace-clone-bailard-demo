@@ -35,6 +35,13 @@ const Main = () =>  {
                     </div>
                 </div>
             </div>
+
+            <div className='main-subscribe'>
+                <h1>Subscribe</h1>
+                <p>Sign up with your email address to receive news and updates.</p>
+                <input placeholder='Email Address' />
+                <button>Sign up</button>
+            </div>
         </div>
         )
 }

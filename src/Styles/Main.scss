@@ -108,4 +108,34 @@
             }
         }
     }
+
+    .main-subscribe {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        background: #F7F7F7;
+        padding: 80px;
+
+        h1, p {
+            text-align: center;
+            width: 100%;
+            margin: 1rem 0;
+        }
+
+        input {
+            border: 1px solid rgba(0,0,0,.12);
+            background: #fff;
+            transition: background .3s ease-out,border .3s ease-out;
+            padding: 1.4rem 2rem !important;
+            font-size: calc(1 * 1rem) !important;
+            margin: 20px;
+        }
+        ::placeholder {
+            color: #A8A6A1;
+            opacity: 1;
+        }
+    }
 }
