@@ -27,7 +27,7 @@ const Nav = () => {
         case '/news':
             donateLink = 'colored-donate'
             break;
-        case '/contact':
+        case '/readme':
             links = 'links-white link'
             underlineColor = 'active-white';
             break;
@@ -47,7 +47,7 @@ const Nav = () => {
                 <ul className="navbar-nav">
                     <li className={active === '/about' ? `${links} ${underlineColor}` : links} ><Link to="/about" onClick={() => setActive('/about')}>About</Link></li>
                     <li className={active === '/news' ? `${links} ${underlineColor}` : links} ><Link to="/news" onClick={() => setActive('/news')}>News</Link></li>
-                    <li className={active === '/contact' ? `${links} ${underlineColor}` : links} ><Link to="/read" onClick={() => setActive('/read')}>Read Me</Link></li>
+                    <li className={active === '/readme' ? `${links} ${underlineColor}` : links} ><Link to="/readme" onClick={() => setActive('/readme')}>Read Me</Link></li>
                     <div className={donateLink} >Take Action</div>
                 </ul>
                 </div>

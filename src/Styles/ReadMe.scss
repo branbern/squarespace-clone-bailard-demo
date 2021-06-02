@@ -1,0 +1,54 @@
+.readme {
+    .overlay {
+        height: 615px;
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+            width: 100%;
+            height: 1015px;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        .main-overlay {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 240px;
+            color: #fff;
+            font-weight: 400;
+            width: 100%;
+            margin: auto;
+            align-content: center;
+    
+            p {
+                margin: 2rem 0;
+                font-size: calc(1.2 * 1rem);
+            }
+    
+            h1 {
+                font-size: calc(4 * 1rem);
+            }
+    
+            
+        }
+        
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 42%;
+        margin: auto;
+        align-items: center;
+        text-align: left;
+        padding: 100px 0;
+        h3 {
+            font-size: calc(2.2 * 1rem);
+            margin: 2rem 0;
+        }
+    }
+
+}
