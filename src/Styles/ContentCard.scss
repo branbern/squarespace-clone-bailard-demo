@@ -1,0 +1,39 @@
+.content-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+    margin: 4rem 0;
+
+    img {
+        max-width: 100%;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .content-card-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
+        padding: 80px;
+        flex-grow: 2;
+
+        h1 {
+            font-size: calc(2.8 * 1rem);
+            width :70%;
+        }
+        p {
+            font-size: calc(1.1 * 1rem);
+            margin: 1rem 0;
+        }
+        a {
+            border-bottom: 1px solid #B0AEC2;
+            width: 80px;
+            color: #B0AEC2;
+        }
+    }
+
+}

@@ -16,17 +16,17 @@ const Main = () =>  {
                     <h1>We conserve land through outreach and restoration.</h1>
                     <p>Some of the Earth's greatest landscapes are threatened by increased road construction, oil and gas exploration, and mining. We aim to protect these areas from inappropriate development, but we cannot achieve our goals alone. Find out how you can help.</p>
                 </div>
-                <div className='content-card-wrapper'>
-                    <div className='content-card'>
+                <div className='main-content-card-wrapper'>
+                    <div className='main-content-card'>
                     <img src='https://images.squarespace-cdn.com/content/v1/5d3b3ed8084b6f00015405ba/1565292809235-XZT8EMYC8YNFNGLGWJKE/ke17ZwdGBToddI8pDm48kNelEQHH6ObyKXhPVtuHdZJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1URRnb5gEg87j_u_CnS6lshZ4YkRnSBu_Tm16f7Acf5j6LgOZgZlG0NTwuNC4AvKbWw/20140302_Trade%2B151_0503.jpg?format=750w' />
-                        <div className='content-card-info'>
+                        <div className='main-content-card-info'>
                             <h2>Our Organization</h2>
                             <p>Find out about our mission, methods, and the results of our decades of advocacy.</p>
                             <button>Learn More</button>
                         </div>
                     </div>
-                    <div className='content-card'>
-                        <div className='content-card-info'>
+                    <div className='main-content-card'>
+                        <div className='main-content-card-info'>
                             <h2>Take Action</h2>
                             <p>Ready to take the next step? You can become a contributor to our cause, or participate yourself.</p>
                             <button>Find Out How</button>

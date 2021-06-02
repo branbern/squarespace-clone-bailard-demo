@@ -64,15 +64,13 @@
 
         }
 
-        .content-card-wrapper {
+        .main-content-card-wrapper {
             display: flex;
             flex-direction: column;
             justify-self: center;
             align-items: center;
 
-
-
-            .content-card {
+            .main-content-card {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;

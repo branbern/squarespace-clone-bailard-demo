@@ -24,7 +24,7 @@ const Nav = () => {
         case '/episodes':
             donateLink = 'colored-donate';
             break;
-        case '/blog':
+        case '/news':
             donateLink = 'colored-donate'
             break;
         case '/contact':
@@ -46,7 +46,7 @@ const Nav = () => {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul className="navbar-nav">
                     <li className={active === '/about' ? `${links} ${underlineColor}` : links} ><Link to="/about" onClick={() => setActive('/about')}>About</Link></li>
-                    <li className={active === '/blog' ? `${links} ${underlineColor}` : links} ><Link to="/news" onClick={() => setActive('/news')}>News</Link></li>
+                    <li className={active === '/news' ? `${links} ${underlineColor}` : links} ><Link to="/news" onClick={() => setActive('/news')}>News</Link></li>
                     <li className={active === '/contact' ? `${links} ${underlineColor}` : links} ><Link to="/read" onClick={() => setActive('/read')}>Read Me</Link></li>
                     <div className={donateLink} >Take Action</div>
                 </ul>
