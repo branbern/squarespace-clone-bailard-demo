@@ -6,26 +6,28 @@ const Nav = () => {
 
     const location = useLocation();
     const [active, setActive] = useState(location.pathname);
+    const [showDropdown, setShowDropdown] = useState(false);
 
     let links = 'links-white link';
-    let donateLink = 'white-donate';
+    let actionLink = 'white-action action';
     let underlineColor = 'active-black';
 
 
     switch(active) {
         case '/':
             links = 'links-white link'
-            donateLink = 'colored-donate'
+            actionLink = 'colored-action action'
             break;
         case '/about':
             links = 'links-white link' 
             underlineColor = 'active-white';
             break;
         case '/episodes':
-            donateLink = 'colored-donate';
+            actionLink = 'colored-action action';
             break;
         case '/news':
-            donateLink = 'colored-donate'
+            actionLink = 'colored-action action'
+            links = 'links-black link'
             break;
         case '/readme':
             links = 'links-white link'
@@ -34,7 +36,7 @@ const Nav = () => {
 
         default: break;
     }
-   
+
     return (
         <div className='nav-wrapper'>
             <nav className="navbar navbar-expand-lg navbar-light nav">
@@ -45,10 +47,27 @@ const Nav = () => {
 
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul className="navbar-nav">
-                    <li className={active === '/about' ? `${links} ${underlineColor}` : links} ><Link to="/about" onClick={() => setActive('/about')}>About</Link></li>
+                    <div onMouseEnter={() => setShowDropdown(true)}
+                        onMouseLeave={() => setShowDropdown(false)}>
+
+                        <li className={links}>
+                            <a>About</a>
+                        </li>
+
+                        <div className={showDropdown ? `dropdown` : 'hide'}>
+                            <ul className="dropdown-ul">
+                                <li className="minilink"> <Link to="/news" onClick={() => setActive('/news')}>What we do</Link></li>
+                                <li className="minilink"> <Link to="/news" onClick={() => setActive('/news')}>Projects</Link></li>
+                                <li className="minilink"> <Link to="/news" onClick={() => setActive('/news')}>Partners</Link></li>
+                                <li className="minilink"> <Link to="/news" onClick={() => setActive('/news')}>Contact </Link></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+               
                     <li className={active === '/news' ? `${links} ${underlineColor}` : links} ><Link to="/news" onClick={() => setActive('/news')}>News</Link></li>
                     <li className={active === '/readme' ? `${links} ${underlineColor}` : links} ><Link to="/readme" onClick={() => setActive('/readme')}>Read Me</Link></li>
-                    <div className={donateLink} >Take Action</div>
+                    <div className={actionLink} >Take Action</div>
                 </ul>
                 </div>
             </nav>
